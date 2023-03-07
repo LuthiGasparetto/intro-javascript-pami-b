@@ -1,37 +1,41 @@
 
-//comentario de uma linha
+// comentário de uma linha
 console.log('Estou desenvolvendo em java-script');
 
 /*
-Comentario de mais de
-uma linha
-Existe tres formas de declarar uma varialvel em java-script
-(var, let e const)
+    comentário de mais de 
+    uma linha
+    Três formas de declarar uma variável em java-script
+    (var, let e const)
 */
 
-let nome = 'Luthi';
-let idade = 27;
+let nome = 'Ewerton'; 
+let idade = 35;
 let trabalha = true;
-let altura_pessoa = 1.88; //numero entre aspas é string
-let cores_favoritas = ['preto','branco', 'vermelho', 'azul']; // array
+let alturaPessoa = 1.76;
+let altura_pessoa = '1.76'; // nº entre aspas é string
+let coresFavoritas = ['roxo', 'preto', 'laranja', 'verde']; // array
 let endereco = {
-    logadouro : 'Rua',
-    nmLog : 'Sao Sebastiao',
-    num : '164',
-    bairro : 'Pq. Universitario'
-}; //objeto
-
+    logradouro : 'Avenida', 
+    nmLog : 'Brasil', 
+    num : '200-A', 
+    bairro : 'Centro'
+}; // objeto
 let covid = null;
 let dengue;
 
-console.log(altura_pessoa);
-console.log('Nome: ' + nome);
+console.log(alturaPessoa); 
+console.log('Nome: ' + nome); 
 console.log('O ' + nome + ' tem ' + idade + ' anos.');
 console.log('');;
-console.log('---------------------------');
-console.log(typeof(dengue));
+console.log('----------------------------');
+console.log(typeof(coresFavoritas)); 
+const ehArray = Array.isArray(coresFavoritas);
 
+console.log(ehArray === true ? 'É um array' : 'Não é um array');
 
-
-
-
+if (ehArray === true) {
+    console.log('É um array');
+} else {
+    console.log('Não é um array');
+}
