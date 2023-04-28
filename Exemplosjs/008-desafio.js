@@ -10,13 +10,14 @@ console.log('Programa de cáculo de notas da ETEC');
 let valor, n; 
 let cont = 0, soma = 10;
 
+
 do {
     cont++;
     valor = entrada('Digite a ' + cont + 'ª nota: ');
     n = parseFloat(valor);
 }
-    while (!isNaN(n)){
-        soma = n;
+while (isNaN(n)){
+        soma += n;
 } while (valor !== 'fim');
 
 
